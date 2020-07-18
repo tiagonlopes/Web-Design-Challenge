@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="personalized.css">
+
+</head>
+
+<body>
+    <!-- Bar Part -->
+    <header class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand mb-0 h1" href="MainPage.html" style="color: white">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Temp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="Cloud.html">Cloudiness</a>
+                        <a class="dropdown-item" href="Humi.html">Humidity</a>
+                        <a class="dropdown-item" href="Wind.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="ComparisonPage.html">Comparison</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="DataPage.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- Body of Page -->
+    <div class="container-lg">
+        <div class="row justify-content-around">
+            <div class="col-lg-8 bg-light">
+                <h2>Max Temperature</h2>
+                <hr>
+                <img src="Resources\LatVsTemp.png" class="imgmainfield">
+                <p>As expected, the weather becomes significantly warmer as one approachhes the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than northern hemisphere.
+                    This may be due to the tilt of the earth at the time of the year this data was gathered.
+                </p>
+            </div>
+            <div class="col-lg-3 bg-light">
+                    <h3>Visualizations</h3>
+                    <hr>
+                    <div class="container d-lg-none">
+                        <div class="row">
+                            <div class="col">
+                                <a href="Temp.html">
+                                    <img src="Resources\LatVsTemp.png" class="imgmain">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="Humi.html">
+                                    <img src="Resources\LatVsHumidity.png" class="imgvisualization">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="Cloud.html">
+                                    <img src="Resources\LatVsCloudiness.png" class="imgvisualization">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="Wind.html">
+                                    <img src="Resources\LatVsWindSpeed.png" class="imgvisualization">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container d-none d-lg-block">
+                        <div class="row">
+                            <div class="col">
+                                <a href="Temp.html">
+                                    <img src="Resources\LatVsTemp.png" class="imgmain">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="Humi.html">
+                                    <img src="Resources\LatVsHumidity.png" class="imgvisualization">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="Cloud.html">
+                                    <img src="Resources\LatVsCloudiness.png" class="imgvisualization">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="Wind.html">
+                                    <img src="Resources\LatVsWindSpeed.png" class="imgvisualization">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
